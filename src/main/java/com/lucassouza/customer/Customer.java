@@ -21,8 +21,8 @@ public class Customer implements Comparable<Customer> {
     @Override
     public String toString() {
         return "{" +
-                "id=" + id +
-                ", name='" + name + '\'' +
+                "\"user_id\": " + id +
+                ", \"name\": \"" + name + '\"' +
                 '}';
     }
 

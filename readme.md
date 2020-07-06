@@ -27,6 +27,21 @@ The only additional library used is Jackson to process the file provided.
 
 The focus of this solution is to provide a simple API to solve the technical problem.
 
+
+### Simple usage
+
+Execute the follwoing instruction at the cli to generate the list of invitation 
+
+```
+java -jar target\invitation-1.0-SNAPSHOT-jar-with-dependencies.jar [path to input file]
+```
+
+For example:
+
+```
+java -jar target\invitation-1.0-SNAPSHOT-jar-with-dependencies.jar src\main\resources\customers.txt
+```
+
 ### How to build
 
 Assuming basic knowledge about Java simple run:
@@ -35,8 +50,12 @@ Assuming basic knowledge about Java simple run:
 mvn clean package
 ```
 
-### How to test
+### How to execute all tests
 
-### Sample output
+```
+mvn clean test
+```
+
+It was added to the test folder a simple implementation consuming a file from the resource folder inside the file GenerateOutputFromResources.java
 
 ## Final considerations
